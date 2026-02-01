@@ -9,7 +9,7 @@ app.use(express.json());
 
 const noteModel=require('./model/note.model')
 
-app.get("/",()=>{
+app.get("/",(req,res)=>{
     res.send("Hello World")
 })
 
